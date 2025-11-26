@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Github, Linkedin, Mail } from "lucide-react";
 import avatar from "@/assets/avatar.jpg";
+import Muhammed from "@/assets/Muhammed.png"
 
 export const Hero = () => {
   return (
@@ -8,7 +9,7 @@ export const Hero = () => {
       <div className="max-w-6xl mx-auto text-center animate-fade-in">
         <div className="mb-8 inline-block">
           <img
-            src={avatar}
+            src={Muhammed}
             alt="Alabi Muhammed"
             className="w-48 h-48 rounded-full object-cover border-4 border-primary shadow-2xl mx-auto hover-scale"
           />
