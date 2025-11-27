@@ -12,6 +12,7 @@ const projects = [
     image: adminDashboard,
     techStack: ["React.js", "TypeScript", "Node.js", "Tailwind"],
     github: "#",
+    liveDemo: "https://admin-dashboard-rouge-five-80.vercel.app",
   },
   {
     title: "Trade by Barter Website",
@@ -20,6 +21,7 @@ const projects = [
     image: tradeBarter,
     techStack: ["React.js", "TypeScript", "Node.js", "Tailwind"],
     github: "#",
+    liveDemo: "https://tradehub-barter.vercel.app",
   },
 ];
 
@@ -74,7 +76,9 @@ export const Projects = () => {
                     View Code
                   </a>
                   <a
-                    href="#"
+                    href={project.liveDemo}
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="flex items-center gap-2 text-sm text-primary hover:underline"
                   >
                     <ExternalLink className="h-4 w-4" />
